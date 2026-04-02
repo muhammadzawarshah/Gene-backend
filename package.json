@@ -8,8 +8,8 @@
     "dev": "ts-node-dev src/server.ts",
     "start": "node dist/server.js",
     "vercel-build": "prisma generate && tsc",
-    "postinstall": "prisma generate --schema=./prisma/schema.prisma",
-    "build": "prisma generate --schema=./prisma/schema.prisma && tsc"
+    "postinstall": "prisma generate --schema=../prisma/schema.prisma",
+    "build": "prisma generate --schema=../prisma/schema.prisma && tsc"
   },
   "engines": {
     "node": ">=20.x"
