@@ -1,0 +1,10 @@
+import { Request, Response, NextFunction } from 'express';
+export declare const createSalesOrder: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const createCusOrder: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const listsales: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const specificsales: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const listcustsales: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const getDashboardStats: (req: any, res: any) => Promise<void>;
+export declare const getFinancialLedger: (req: any, res: any) => Promise<any>;
+export declare const getBillingSyncStatus: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const updateSalesOrder: (req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>> | undefined>;
